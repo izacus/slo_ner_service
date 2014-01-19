@@ -15,7 +15,7 @@ Send a POST request to `/tag` URL with content of your text:
 The service will respond with tokenized text as a JSON Array. Tagged words will have `tag` property set.
 
 ```
-[{"word":"Mitja"},{"word":"zaradi"},{"word":"testa"},{"word":"hodi"},{"word":"v"},{"word":"Ljubljano","tag":"LOCATION"},{"word":"."}]
+[{"word":"Mitja", "tag":"PERSON"},{"word":"zaradi"},{"word":"testa"},{"word":"hodi"},{"word":"v"},{"word":"Ljubljano","tag":"LOCATION"},{"word":"."}]
 ```
 
 Possible tags are: PERSON, LOCATION and OTHER for personal, geographic and other names. Words that do not have a tag will not have `tag` property present.
