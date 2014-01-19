@@ -1,7 +1,7 @@
 Slovenian NER service
 ===============
 
-This is a RESTful service for doing named entity extraction for slovenian language. It is written in Java and it needs a Java servlet container to run (e.g. Jetty, Tomcat or other).
+This is a RESTful service for doing named entity extraction for Slovenian language. It is written in Java and it needs a Java servlet container to run (e.g. Jetty, Tomcat or other).
 
 Usage
 --------
@@ -23,7 +23,7 @@ Possible tags are: PERSON, LOCATION and OTHER for personal, geographic and other
 Background
 -----------
 
-The tagger uses [Stanford Named Entity Recongniser][1] library trained on [ssj500k][2] tagged set with following properties file:
+The tagger uses [Stanford Named Entity Recognizer][1] library trained on [ssj500k][2] tagged set with following properties file:
 
 ```
 # location of the training file
