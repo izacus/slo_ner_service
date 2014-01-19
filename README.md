@@ -20,6 +20,24 @@ The service will respond with tokenized text as a JSON Array. Tagged words will 
 
 Possible tags are: PERSON, LOCATION and OTHER for personal, geographic and other names. Words that do not have a tag will not have `tag` property present.
 
+Compilation
+------------
+
+Requirements:
+
+* Java 1.7
+* Maven 3.x
+
+To compile and create a WAR file just run:
+
+```
+mvn package
+```
+
+and collect built .war file from `target` directory.
+
+
+
 Background
 -----------
 
