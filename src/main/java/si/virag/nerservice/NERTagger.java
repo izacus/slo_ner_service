@@ -45,9 +45,7 @@ public class NERTagger extends javax.servlet.http.HttpServlet
                 wordNode.put("word", word.word());
 
                 String tag = word.get(CoreAnnotations.AnswerAnnotation.class);
-                if (!tag.equals("O"))
-                    wordNode.put("tag", tag);
-                else if (tag.equals("osebno"))
+                if (tag.equals("osebno"))
                     wordNode.put("tag", "PERSON");
                 else if (tag.equals("zemljepisno"))
                     wordNode.put("tag", "LOCATION");
