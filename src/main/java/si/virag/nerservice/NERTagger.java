@@ -25,7 +25,7 @@ public class NERTagger extends javax.servlet.http.HttpServlet
     @Override
     public void init() throws ServletException
     {
-        String modelPath = getServletContext().getRealPath("lib/slovenian.ser.gz");
+        String modelPath = getServletContext().getRealPath("models/slovenian.ser.gz");
         classifier = CRFClassifier.getClassifierNoExceptions(modelPath);
         mapper = new ObjectMapper();
     }
